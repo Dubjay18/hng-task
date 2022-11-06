@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../logo.svg";
+
 function Main() {
-  const navigate = useNavigate();
   return (
     <main className='flex w-full  flex-col gap-10 items-center justify-center px-20 text-center'>
       <div className='min-h-[80px] w-[80vw] flex items-center justify-center text-[18px]'>
@@ -71,8 +70,9 @@ function Main() {
         Design Books
       </a>
       <a
-        className='bg-[#EAECF0] rounded-[8px] min-h-[80px] w-[80vw] flex items-center justify-center text-[#101828] cursor-pointer font-600'
-        onClick={() => navigate("/contact")}>
+        id='contact'
+        href='/contact'
+        className='bg-[#EAECF0] rounded-[8px] min-h-[80px] w-[80vw] flex items-center justify-center text-[#101828] cursor-pointer font-600'>
         Contact me
       </a>
 
