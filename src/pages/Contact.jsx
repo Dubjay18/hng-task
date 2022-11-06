@@ -100,16 +100,6 @@ function Contact() {
                       : "[box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);] border-[#d0d5dd] focus:outline-1 blue_input"
                   } h-[120px] resize-none w-full  py-3 px-4  border-[1px] font-[400] [box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05)] rounded-lg   `}
                   required></textarea>
-                {formData.message ? null : (
-                  <h5
-                    className={
-                      !formData.message
-                        ? "text-[#F83F23] font-[400]"
-                        : "not"
-                    }>
-                    Please enter a message{" "}
-                  </h5>
-                )}
               </div>
               <div className='checked'>
                 <input

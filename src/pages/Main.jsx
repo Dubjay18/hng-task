@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Main() {
   return (
@@ -69,12 +69,12 @@ function Main() {
         className='bg-[#EAECF0] rounded-[8px] min-h-[80px] w-[80vw] flex items-center justify-center text-[#101828] font-600'>
         Design Books
       </a>
-      <a
+      <Link
         id='contact'
-        href='/contact'
+        to='/contact'
         className='bg-[#EAECF0] rounded-[8px] min-h-[80px] w-[80vw] flex items-center justify-center text-[#101828] cursor-pointer font-600'>
         Contact me
-      </a>
+      </Link>
 
       <button className=' rounded-[8px] min-h-[80px] w-[80vw] flex items-center justify-center'>
         <div className='flex items-center gap-10'>
